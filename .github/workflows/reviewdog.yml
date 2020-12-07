@@ -1,5 +1,5 @@
 name: reviewdog
-on: [push]
+on: [pull_request]
 jobs:
   stylelint:
     name: runner / stylelint
@@ -9,6 +9,8 @@ jobs:
       - name: stylelint
         uses: acrollet/action-stylelint@master
         with:
+          fail_on_error: true
+          filter_mode: nofilter
           github_token: ${{ secrets.github_token }}
           packages: 'stylelint-config-sass-guidelines stylelint-order'
           reporter: github-pr-review
