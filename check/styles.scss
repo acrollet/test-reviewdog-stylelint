@@ -6,6 +6,7 @@
 .node-form textarea {
   max-width: 750px;
 }
+
 .node {
   &__content {
     @include va-basic-styling;
@@ -35,6 +36,7 @@
     main {
       flex: 3 0;
     }
+
     .layout-sidebar-first {
       order: 1;
       padding-right: 2em;
@@ -57,10 +59,11 @@
   .field__label {
     text-transform: uppercase;
   }
+
   .field--name-field-related-links {
     > .field__item,
     > .field__items {
-      background: #eeeeee;
+      background: #eee;
       padding: 1em;
     }
   }
@@ -74,7 +77,7 @@
 
 /* Admin menus with route:<nolink> links should look OK */
 .toolbar-tray span.toolbar-icon {
-  color: #888888;
+  color: #888;
   cursor: pointer;
   display: block;
   padding: 1em 1.333em;
@@ -130,10 +133,11 @@
     text-transform: uppercase;
   }
 }
+
 #block-entitymetadisplay {
   border: 1px solid #c0c0c0;
   border-radius: 2px;
-  margin: 1em 0px;
+  margin: 1em 0;
   padding: 10px 18px;
 
   div {
@@ -155,7 +159,7 @@
       float: none;
 
       input.allday {
-        margin: .65em 0.5em 0 6em;
+        margin: 0.65em 0.5em 0 6em;
       }
     }
   }
